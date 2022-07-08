@@ -23,13 +23,17 @@ body {
 }
 
 #profile {
-    padding-left: 100px;
+    padding-left: calc(50% - 290px);
 }
 
-.profileImage {
+#profileImage {
     width: 64px;
     height: 64px;
     border-radius: 32px;
+}
+
+#title {
+    padding-left: 0px;
 }
 
 .content {
@@ -49,10 +53,11 @@ body {
     text-align: center;
     padding: 12px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 #tab a:hover{
-    background-color: rgba(0, 18, 119, 0.9);
+    background-color: rgba(29, 47, 148, 0.9);
     color: white;
 }
 
