@@ -2,50 +2,46 @@
 body {
     background-color: rgb(0, 10, 70);
     color: whitesmoke;
-    font-family: 'Electrolize', sans-serif;
-    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    margin: 0px;
 }
 
+
+/* HEADER */
 .header {
     overflow: hidden;
     font-size: 64px;
-    padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 0px;
     color: white;
     background-color: rgb(0, 5, 35);
+    border-bottom: solid;
+    border-color: rgb(32, 57, 204);
 }
-
-.header li {
+.header li{
     float:left;
     display: block;
     padding: 10px;
 }
-
 #profile {
-    padding-left: calc(50% - 290px);
+    margin-left: calc(50% - 320px);
+    padding-top: 20px;
 }
-
 #profileImage {
     width: 64px;
     height: 64px;
     border-radius: 32px;
 }
-
 #title {
-    padding-left: 0px;
+    padding-left: 25px;
 }
-
-.content {
-    font-family: 'Electrolize', sans-serif;
-    font-size: 32px;
-}
-
 #tab {
     background-color: rgba(135, 140, 255, 0.9);
     overflow: hidden;
+    font-size: 24px;
 }
-
 #tab a{
     color: black;
     float: left;
@@ -55,23 +51,34 @@ body {
     transition: 0.3s;
     text-decoration: none;
 }
-
 #tab a:hover{
     background-color: rgba(29, 47, 148, 0.9);
     color: white;
 }
-
 #tab a.active{
     background-color: rgba(6, 71, 0, 0.9);
     color: whitesmoke;
 }
-
-.sticky {
-    position: fixed;
+#header{
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
-    width: 100%;
 }
 
-.sticky + .content {
-    padding-top: 157px;
-  }
+section.n1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+section.n1 h2 {
+    font-size: 42px;
+}
+
+.imgRight {
+    float: right;
+    width: 300px;
+    height: auto;
+    padding-left: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

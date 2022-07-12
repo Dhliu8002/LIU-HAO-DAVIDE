@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS\stylesheet.css">
 
         <!-- FONTS -->
@@ -11,46 +12,57 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Just+Another+Hand&family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- TITLE AND ICON -->
         <title> LIU HAO DAVIDE</title>
-        <link rel="icon" href="images/Profile.jpg">
+        <link rel="icon" href="images/profile-icon.png">
     </head>
 
 
     <body> 
-        <!-- HEAD -->
+        <!-- HEADER and NAV -->
         <div id="header">
             <ul class="header">
                 <li id="profile">
-                        <a href="/"id="profileImage"> <img alt="PROFILE IMAGE" id="profileImage" src="images/Profile.jpg"> </a>
+                        <a href="/"id="profileImage"> 
+                            <img alt="PROFILE IMAGE" id="profileImage" src="images/Profile.jpg"> 
+                        </a>
                 </li>
                 <li id="title">
                     LIU HAO DAVIDE
                 </li>
             </ul>
 
-            <!-- NAV -->
             <div id="tab">
                 <a class="active" href="javascript:void(0)">Home</a>
                 <a href="javascript:void(0)">News</a>
                 <a href="javascript:void(0)">Contact</a>
             </div>
         </div>
-        
-        <script>
-            window.onscroll = function() {onTop()};
-            
-            var navbar = document.getElementById("header");
-            var sticky = navbar.offsetTop;
-            
-            function onTop() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
-        
+
+        <!-- CONTENT -->
+        <div id="content">
+            <section class="n1">
+                <h2>Introduction</h2>
+                <p>
+                <img alt="My photo" src="images\Myphoto.jpg" class="imgRight">
+                My name is Liu Hao Davide, and I am a Chinese boy who lives in the city of Rome. 
+                I am 14 years old, born in 8 April 2008. 
+                I’ve always liked mathematics, and I’ve always done well in this subject, 
+                that’s why Iìve always been good at coding from the day I discovered it. 
+                </p>
+                <p>
+                It all started when thanks to the pandemic, 
+                when my middle school taught me about scratch (<a href="scratch.mit.edu" style="color: white;">SCRATCH</a>), 
+                but I did many projects I wasn’t supposed to, went further away.               But the more I went on, the more I saw the limits scratch had and less I liked scratch. 
+                That’s why I joined a programming course held by a skilled university student from Canada. 
+                I loved the course, and I decided to continue it until I could.
+                </p>
+            </section>
+        </div>
+
+
+
     </body>
 </html>
