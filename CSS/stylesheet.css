@@ -13,13 +13,12 @@ body {
     overflow: hidden;
     font-size: 64px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-left: 0px;
     color: white;
-    background-color: rgb(0, 5, 35);
-    border-bottom: solid;
-    border-color: rgb(32, 57, 204);
+    background-color: rgba(0, 5, 35, 0.9);
 }
+
 .header li{
     float:left;
     display: block;
@@ -46,7 +45,7 @@ body {
     float: left;
     display: block;
     text-align: center;
-    padding: 12.25px;
+    padding: 12.5px;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -62,7 +61,7 @@ body {
     display: block;
     float: right;
     color: black;
-    padding: 13.85px;
+    padding: 13.5px;
     font-size: 30px;
     transition: 0.3s;
 }
@@ -80,22 +79,22 @@ body {
     border: 0px;
     background-color: rgba(135, 140, 255, 0.9);
 }
-
-#header{
+.headerSticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 
+
+
 section.n1{
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 100px;
 }
-
 section.n1 h2 {
     font-size: 42px;
 }
-
 .imgRight {
     float: right;
     width: 300px;
@@ -103,4 +102,19 @@ section.n1 h2 {
     padding-left: 100px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+section.image{
+    padding-left: 100px;
+    margin-bottom: 100px;
+    height: 300px;
+}
+
+section.image img{
+    padding: 10px;
+    min-width: 300px;
+    width: calc(50% - 70px);
+    height: 300px; 
+    object-fit: cover;
+    float: left;
 }
