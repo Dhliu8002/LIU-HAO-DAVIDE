@@ -104,13 +104,13 @@ section.n1 h2 {
     padding-bottom: 0px;
 }
 
-section.image{
+.imageS1{
     padding-left: 100px;
     margin-bottom: 100px;
     height: 300px;
 }
 
-section.image img{
+.imageS1 img{
     padding: 10px;
     min-width: 300px;
     width: calc(50% - 70px);
