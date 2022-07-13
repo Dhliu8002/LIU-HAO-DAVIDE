@@ -77,7 +77,7 @@ body {
     float: right;
     padding: 0px;
     border: 0px;
-    background-color: rgba(135, 140, 255, 0.9);
+    background-color: rgba(135, 140, 255, 0);
 }
 .headerSticky {
     position: -webkit-sticky;
@@ -102,6 +102,7 @@ section.n1 h2 {
     padding-left: 100px;
     padding-top: 0px;
     padding-bottom: 0px;
+    border-radius: 25px;
 }
 
 .imageS1{
@@ -117,4 +118,5 @@ section.n1 h2 {
     height: 300px; 
     object-fit: cover;
     float: left;
+    border-radius: 25px;
 }
