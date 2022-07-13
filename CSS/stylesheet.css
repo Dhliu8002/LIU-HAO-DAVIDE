@@ -32,7 +32,6 @@ body {
 #profileImage {
     width: 64px;
     height: 64px;
-    border-radius: 32px;
 }
 #title {
     padding-left: 25px;
@@ -47,7 +46,7 @@ body {
     float: left;
     display: block;
     text-align: center;
-    padding: 12px;
+    padding: 12.25px;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -59,6 +58,29 @@ body {
     background-color: rgba(6, 71, 0, 0.9);
     color: whitesmoke;
 }
+#user {
+    display: block;
+    float: right;
+    color: black;
+    padding: 13.85px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+#user.active {
+    background-color: rgba(6, 71, 0, 0.9);
+    color: whitesmoke;
+}
+#user:hover {
+    color: white;
+    background-color: rgba(29, 47, 148, 0.9);
+}
+.userButton {
+    float: right;
+    padding: 0px;
+    border: 0px;
+    background-color: rgba(135, 140, 255, 0.9);
+}
+
 #header{
     position: -webkit-sticky;
     position: sticky;
