@@ -25,7 +25,7 @@ body {
     padding: 10px;
 }
 #profile {
-    margin-left: calc(50% - 320px);
+    padding-left: calc(50% - 320px);
     padding-top: 20px;
 }
 #profileImage {
@@ -85,8 +85,6 @@ body {
     top: 0;
 }
 
-
-
 section.n1{
     margin-left: 100px;
     margin-right: 100px;
@@ -101,7 +99,7 @@ section.n1 h2 {
     height: auto;
     padding-left: 100px;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 25px;
     border-radius: 25px;
 }
 
