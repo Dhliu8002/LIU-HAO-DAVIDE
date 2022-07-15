@@ -12,42 +12,78 @@ body {
 .header {
     overflow: hidden;
     font-size: 64px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin: 0;
     color: white;
     background-color: rgba(0, 5, 35, 0.9);
 }
+.headerMobile {
+    height: 56px;
+}
+.titleMobile {
+    font-size: 32px;
+}
 
-.header li{
+.header li {
+    float: left;
+    display: block;
+}
+
+.profile {
+    padding: 10px;
+    margin-left: calc(50% - 336px);
+    float:left;
+    position: relative;
+    display: block;
+}
+.profileMobile {
+    padding: 0px;
+    margin: 0px;
+    margin-left: calc(50% - 160px);
+    position: relative;
+    bottom: 34px;
+}
+
+.profileImg {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: 12px;
+}
+.profileImgMobile {
+    padding: 0px;
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+}
+
+#title {
+    padding-left: 25px;
     float:left;
     display: block;
     padding: 10px;
 }
-#profile {
-    padding-left: calc(50% - 320px);
-    padding-top: 20px;
-}
-#profileImage {
-    width: 64px;
-    height: 64px;
-}
-#title {
-    padding-left: 25px;
-}
+
+NAV
 #tab {
     background-color: rgba(135, 140, 255, 0.9);
     overflow: hidden;
     font-size: 24px;
+    transition: 0.3s;
+}
+.tabMobile a{
+    font-size: 16px;
+    padding: 6px;
 }
 #tab a{
     color: black;
     float: left;
     display: block;
     text-align: center;
-    padding: 12.5px;
-    transition: 0.3s;
     text-decoration: none;
+}
+.tabComp a {
+    padding: 12.25px;
 }
 #tab a:hover{
     background-color: rgba(29, 47, 148, 0.9);
@@ -57,13 +93,19 @@ body {
     background-color: rgba(6, 71, 0, 0.9);
     color: whitesmoke;
 }
-#user {
+.user {
     display: block;
     float: right;
     color: black;
-    padding: 13.5px;
-    font-size: 30px;
     transition: 0.3s;
+}
+.tabComp button i {
+    font-size: 32px;
+    padding: 12.25px;
+}
+.tabMobile button i {
+    padding: 9px;
+    font-size: 16px;
 }
 #user.active {
     background-color: rgba(6, 71, 0, 0.9);
@@ -85,6 +127,9 @@ body {
     top: 0;
 }
 
+
+/* CONTENT */
+
 section.n1{
     margin-left: 100px;
     margin-right: 100px;
@@ -97,14 +142,14 @@ section.n1 h2 {
     float: right;
     width: 300px;
     height: auto;
-    padding-left: 100px;
-    padding-top: 0px;
-    padding-bottom: 25px;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     border-radius: 25px;
 }
 
 .imageS1{
-    padding-left: 100px;
+    margin-left: 100px;
     margin-bottom: 100px;
     height: 300px;
 }

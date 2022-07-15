@@ -22,11 +22,11 @@
 
     <body> 
         <!-- HEADER and NAV -->
-        <header class="headerSticky">
+        <header id="sticky">
             <ul class="header">
-                <li id="profile">
-                        <a href="javascript:void(0)"id="profileImage"> 
-                            <img alt="PROFILE IMAGE" id="profileImage" src="images/profile-icon.png"> 
+                <li id="profile" class="profile">
+                        <a href="javascript:void(0)"> 
+                            <img alt="PROFILE IMAGE" class="profileImg" src="images/profile-icon.png" id="profileImage"> 
                         </a>
                 </li>
                 <li id="title">
@@ -39,16 +39,50 @@
                 <a class="active" href="javascript:void(0)">Home</a>
                 <a href="javascript:void(0)">News</a>
                 <a href="javascript:void(0)">Contact</a>
-                <button class="userButton"><i class="fa fa-user-circle" id="user"></i></button>
+                <button class="userButton"><i class="fa fa-user-circle user" id="user"></i></button>
             </div>
         </nav>
+
+        <script>
+            var sticky = document.getElementById("sticky");
+            var title = document.getElementById("title");
+            var profImg = document.getElementById("profileImage");
+            var prof = document.getElementById("profile")
+            var tab = document.getElementById("tab")
+            var user = document.getElementById("user")
+
+
+            window.onscroll = function() {stickyOut()}
+            setInterval(stickyOut, 10);
+
+            function stickyOut() {
+                sw = window.innerWidth;
+                if (sw > 650) {
+                    sticky.classList.add("headerSticky");
+                    sticky.classList.remove("headerMobile");
+                    title.classList.remove("titleMobile");
+                    profImg.classList.remove("profileImgMobile");
+                    prof.classList.remove("profileMobile");
+                    tab.classList.remove("tabMobile");
+                    tab.classList.add("tabComp");
+                } else {
+                    sticky.classList.remove("headerSticky");
+                    sticky.classList.add("headerMobile");
+                    title.classList.add("titleMobile");
+                    profImg.classList.add("profileImgMobile");
+                    prof.classList.add("profileMobile");
+                    tab.classList.add("tabMobile");
+                    tab.classList.remove("tabComp");
+                }
+            }
+        </script>
 
         <!-- CONTENT -->
         <div id="content">
             <section class="n1">
                 <h2>Who am I?</h2>
                 <p>
-                <img alt="My photo" src="images\Myphoto.jpg" class="imgRight">
+                <div><img alt="My photo" src="images\Myphoto.jpg" class="imgRight"></div>
                 My name is Liu Hao Davide, and I am a Chinese boy who lives in the city of Rome. 
                 I am 14 years old, born in 8 April 2008. 
                 I’ve always liked mathematics, and I’ve always done well in this subject, 
@@ -56,7 +90,7 @@
                 </p>
                 <p>
                 It all started when thanks to the pandemic, 
-                when my middle school taught me about scratch (<a href="https://scratch.mit.edu/" style="color: white;"><i>SCRATCH</i></a>), 
+                when my middle school taught me about scratch ( <a href="https://scratch.mit.edu/" style="color: white;"><i>SCRATCH</i></a> ) , 
                 but I did many projects I wasn’t supposed to, went further away.
                 But the more I went on, the more I saw the limits scratch had and less I liked scratch. 
                 That’s why I joined a programming course held by a skilled university student from Canada. 
