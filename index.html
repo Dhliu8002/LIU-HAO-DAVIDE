@@ -43,12 +43,11 @@
             </div>
         </nav>
 
-
         <!-- CONTENT -->
         <div id="content">
             <section class="n1" id="sn1">
                 <h2>Who am I?</h2>
-                <div><img alt="My photo" src="images\Myphoto.jpg" class="n1Img" id="n1Img"></div>
+                <div><a href="javascript:void(0)"><img alt="My photo" src="images\Myphoto.jpg" class="n1Img" id="n1Img"></a></div>
                 <p>
                 My name is Liu Hao Davide, and I am a Chinese boy who lives in the city of Rome. 
                 I am 14 years old, born in 8 April 2008. 
@@ -67,16 +66,32 @@
 
             <section>
                 <div class="imageS1" id="sn2">
-                    <img src="images/scratch.png" alt="SCRATCH IMAGE">
-                    <img src="images/coding.png" alt="HTML CODING IMAGE">
+                    <a href="javascript:void(0)"><img src="images/scratch.png" alt="SCRATCH IMAGE"></a>
+                    <div><p>SCRATCH <br></p></div>
+                    <a href="javascript:void(0)"><img src="images/coding.png" alt="HTML CODING IMAGE"></a>
+                    <div><p>HTML <br></p></div>
+                    
                 </div>
             </section>
         </div>
 
-        <footer>
-            
+        <footer> <!-- under construction -->
+            <div style="height: 100px;">
+                <p>
+                    Made with GitHub and VSCode
+                </p>
+                <p>
+                    <strong>CONTACT</strong> <br>
+                    PHONE NUMBER: +39 327 2166406 <br>
+                    EMAIL: liuhdavide@gmail.com
+                </p>
+                <p id="w3">
+                    Thanks to W3schools for helping me <br>during the CPSC002 course.
+                </p>
+            </div>
         </footer>
 
+        <!-- JAVASCRIPT -->
         <script>
             var sticky = document.getElementById("sticky");
             var title = document.getElementById("title");
@@ -118,8 +133,5 @@
                 }
             }
         </script>
-
-
-
     </body>
 </html>
