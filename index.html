@@ -43,46 +43,13 @@
             </div>
         </nav>
 
-        <script>
-            var sticky = document.getElementById("sticky");
-            var title = document.getElementById("title");
-            var profImg = document.getElementById("profileImage");
-            var prof = document.getElementById("profile")
-            var tab = document.getElementById("tab")
-            var user = document.getElementById("user")
-
-
-            window.onscroll = function() {stickyOut()}
-            setInterval(stickyOut, 10);
-
-            function stickyOut() {
-                sw = window.innerWidth;
-                if (sw > 650) {
-                    sticky.classList.add("headerSticky");
-                    sticky.classList.remove("headerMobile");
-                    title.classList.remove("titleMobile");
-                    profImg.classList.remove("profileImgMobile");
-                    prof.classList.remove("profileMobile");
-                    tab.classList.remove("tabMobile");
-                    tab.classList.add("tabComp");
-                } else {
-                    sticky.classList.remove("headerSticky");
-                    sticky.classList.add("headerMobile");
-                    title.classList.add("titleMobile");
-                    profImg.classList.add("profileImgMobile");
-                    prof.classList.add("profileMobile");
-                    tab.classList.add("tabMobile");
-                    tab.classList.remove("tabComp");
-                }
-            }
-        </script>
 
         <!-- CONTENT -->
         <div id="content">
-            <section class="n1">
+            <section class="n1" id="sn1">
                 <h2>Who am I?</h2>
+                <div><img alt="My photo" src="images\Myphoto.jpg" class="n1Img" id="n1Img"></div>
                 <p>
-                <div><img alt="My photo" src="images\Myphoto.jpg" class="imgRight"></div>
                 My name is Liu Hao Davide, and I am a Chinese boy who lives in the city of Rome. 
                 I am 14 years old, born in 8 April 2008. 
                 I’ve always liked mathematics, and I’ve always done well in this subject, 
@@ -99,7 +66,7 @@
             </section>
 
             <section>
-                <div class="imageS1">
+                <div class="imageS1" id="sn2">
                     <img src="images/scratch.png" alt="SCRATCH IMAGE">
                     <img src="images/coding.png" alt="HTML CODING IMAGE">
                 </div>
@@ -109,6 +76,48 @@
         <footer>
             
         </footer>
+
+        <script>
+            var sticky = document.getElementById("sticky");
+            var title = document.getElementById("title");
+            var profImg = document.getElementById("profileImage");
+            var prof = document.getElementById("profile");
+            var tab = document.getElementById("tab");
+            var user = document.getElementById("user");
+            var sn1 = document.getElementById("sn1");
+            var sn1Img = document.getElementById("n1Img");
+            var sn2 = document.getElementById("sn2");
+
+            window.onscroll = function() {stickyOut()}
+            setInterval(stickyOut, 10);
+
+            function stickyOut() {
+                sw = window.innerWidth;
+                if (sw > 650) {
+                    sticky.classList.add("headerSticky");
+                    sticky.classList.remove("headerMobile");
+                    title.classList.remove("titleMobile");
+                    profImg.classList.remove("profileImgMobile");
+                    prof.classList.remove("profileMobile");
+                    tab.classList.remove("tabMobile");
+                    tab.classList.add("tabComp");
+                    sn1.classList.remove("n1Mobile");
+                    sn1Img.classList.remove("n1ImgMobile");
+                    sn2.classList.remove("imageS1Mobile");
+                } else {
+                    sticky.classList.remove("headerSticky");
+                    sticky.classList.add("headerMobile");
+                    title.classList.add("titleMobile");
+                    profImg.classList.add("profileImgMobile");
+                    prof.classList.add("profileMobile");
+                    tab.classList.add("tabMobile");
+                    tab.classList.remove("tabComp");
+                    sn1.classList.add("n1Mobile");
+                    sn1Img.classList.add("n1ImgMobile");
+                    sn2.classList.add("imageS1Mobile");
+                }
+            }
+        </script>
 
 
 

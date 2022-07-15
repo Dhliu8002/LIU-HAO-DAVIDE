@@ -17,7 +17,7 @@ body {
     background-color: rgba(0, 5, 35, 0.9);
 }
 .headerMobile {
-    height: 56px;
+    float: none;
 }
 .titleMobile {
     font-size: 32px;
@@ -38,9 +38,7 @@ body {
 .profileMobile {
     padding: 0px;
     margin: 0px;
-    margin-left: calc(50% - 160px);
-    position: relative;
-    bottom: 34px;
+    margin-left: calc(50% - 82px);
 }
 
 .profileImg {
@@ -52,8 +50,8 @@ body {
 .profileImgMobile {
     padding: 0px;
     margin: 0px;
-    width: 24px;
-    height: 24px;
+    width: 124px;
+    height: 124px;
     font-size: 0;
 }
 
@@ -72,8 +70,9 @@ NAV
     transition: 0.3s;
 }
 .tabMobile a{
-    font-size: 16px;
+    font-size: 20px;
     padding: 6px;
+    transition: 0.3s;
 }
 #tab a{
     color: black;
@@ -104,8 +103,8 @@ NAV
     padding: 12.25px;
 }
 .tabMobile button i {
-    padding: 9px;
-    font-size: 16px;
+    padding: 9.25px;
+    font-size: 20px;
 }
 #user.active {
     background-color: rgba(6, 71, 0, 0.9);
@@ -135,10 +134,22 @@ section.n1{
     margin-right: 100px;
     margin-bottom: 100px;
 }
+section.n1Mobile {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+} 
 section.n1 h2 {
     font-size: 42px;
 }
-.imgRight {
+section.n1Mobile h2 {
+    font-size:32px; 
+    text-align: center;
+}
+section.n1Mobile p {
+    font-size:16px;
+}
+.n1Img{
     float: right;
     width: 300px;
     height: auto;
@@ -147,19 +158,33 @@ section.n1 h2 {
     margin-bottom: 20px;
     border-radius: 25px;
 }
+.n1ImgMobile{
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+    float: none;
+}
 
 .imageS1{
     margin-left: 100px;
     margin-bottom: 100px;
     height: 300px;
 }
+.imageS1Mobile{
+    margin-left: 20px;
+    margin-bottom: 100px;
+    height: 300px;
+}
 
 .imageS1 img{
     padding: 10px;
-    min-width: 300px;
+    min-width: 200px;
     width: calc(50% - 70px);
     height: 300px; 
     object-fit: cover;
     float: left;
     border-radius: 25px;
+}
+.imageS1Mobile img{
+    width: calc(100% - 40px);
 }
