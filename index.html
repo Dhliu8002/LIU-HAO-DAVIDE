@@ -65,12 +65,34 @@
             </section>
 
             <section>
-                <div class="imageS1" id="sn2">
+                <div class="imageS1" id="scratchImage">
+                    <div><h2>SCRATCH <br></h2></div>
                     <a href="javascript:void(0)"><img src="images/scratch.png" alt="SCRATCH IMAGE"></a>
-                    <div><p>SCRATCH <br></p></div>
+                    <p>Scratch the beginning of my programming...  <br> <br> <a href="https://scratch.mit.edu/users/Dhliu8002/" style="color: whitesmoke;">My scratch profile</a></p>
+                </div>
+            </section>
+
+            <section>
+                <div class="imageS1" id="htmlImage">
+                    <div><h2>HTML <br></h2></div>
                     <a href="javascript:void(0)"><img src="images/coding.png" alt="HTML CODING IMAGE"></a>
-                    <div><p>HTML <br></p></div>
-                    
+                    <p>
+                        The way you create websites, the programming language I 
+                        used to create this website
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <div class="imageS1" id="pythonImage">
+                    <div><h2>PYTHON</h2></div>
+                    <a href="javascript:void(0)"><img src="images/python.png" alt="PYTHON CODING IMAGE"></a>
+                    <p>
+                    I studied PYTHON in the copmuter science course, 
+                    and I am glad to present in this html curriculum
+                    my main project related with chess, and its best players. <br> <br>
+                    <a href="PYTHON\PROJECT Chess DavideLiuHao.html" style="color: whitesmoke;">PYTHON PROJECT</a>
+                    </p>
                 </div>
             </section>
         </div>
@@ -85,7 +107,7 @@
                     PHONE NUMBER: +39 327 2166406 <br>
                     EMAIL: liuhdavide@gmail.com
                 </p>
-                <p id="w3">
+                <p class="w3" id="w3">
                     Thanks to W3schools for helping me <br>during the CPSC002 course.
                 </p>
             </div>
@@ -101,7 +123,10 @@
             var user = document.getElementById("user");
             var sn1 = document.getElementById("sn1");
             var sn1Img = document.getElementById("n1Img");
-            var sn2 = document.getElementById("sn2");
+            var scratchImg = document.getElementById("scratchImage");
+            var htmlImg = document.getElementById("htmlImage");
+            var pythonImg = document.getElementById("pythonImage");
+            var w3 = document.getElementById("w3");
 
             window.onscroll = function() {stickyOut()}
             setInterval(stickyOut, 10);
@@ -118,7 +143,10 @@
                     tab.classList.add("tabComp");
                     sn1.classList.remove("n1Mobile");
                     sn1Img.classList.remove("n1ImgMobile");
-                    sn2.classList.remove("imageS1Mobile");
+                    scratchImg.classList.remove("imageS1Mobile");
+                    htmlImg.classList.remove("imageS1Mobile");
+                    pythonImg.classList.remove("imageS1Mobile");
+                    w3.classList.remove("w3Mobile");
                 } else {
                     sticky.classList.remove("headerSticky");
                     sticky.classList.add("headerMobile");
@@ -129,7 +157,10 @@
                     tab.classList.remove("tabComp");
                     sn1.classList.add("n1Mobile");
                     sn1Img.classList.add("n1ImgMobile");
-                    sn2.classList.add("imageS1Mobile");
+                    scratchImg.classList.add("imageS1Mobile");
+                    htmlImg.classList.add("imageS1Mobile");
+                    pythonImg.classList.add("imageS1Mobile");
+                    w3.classList.add("w3Mobile");
                 }
             }
         </script>

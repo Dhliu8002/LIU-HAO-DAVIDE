@@ -72,7 +72,6 @@ NAV
     background-color: rgba(135, 140, 255, 0.9);
     overflow: hidden;
     font-size: 24px;
-    transition: 0.3s;
 }
 .tabMobile a{
     font-size: 20px;
@@ -88,6 +87,7 @@ NAV
 }
 .tabComp a {
     padding: 12.25px;
+    transition: 0.3s;
 }
 #tab a:hover{
     background-color: rgba(29, 47, 148, 0.9);
@@ -105,10 +105,10 @@ NAV
 }
 .tabComp button i {
     font-size: 32px;
-    padding: 12.25px;
+    padding: 12.5px;
 }
 .tabMobile button i {
-    padding: 9.25px;
+    padding: 10px;
     font-size: 20px;
 }
 #user.active {
@@ -164,53 +164,70 @@ section.n1Mobile p {
     border-radius: 25px;
 }
 .n1ImgMobile{
-    margin-left: 50px;
+    margin-left: 
+    px;
     width: calc(100% - 100px);
+
     height: auto;
     float: none;
 }
 
 .imageS1{
     margin-left: 100px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+    margin-right: 100px;
 }
 .imageS1Mobile{
     margin-left: 20px;
-    margin-bottom: 25px;
+    margin-right: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
-
 .imageS1 a img{
     padding: 10px;
-    min-width: 200px;
-    width: calc(100% - 70px);
+    width: calc(100% - 30px);
     height: 300px; 
     object-fit: cover;
     float: none;
     border-radius: 25px;
-    margin-bottom: 0px;
+    margin-right: 0px;
 }
 .imageS1 p{
-    margin-top: 0px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    text-align: center;
 }
-.imageS1Mobile img{
-    width: calc(100% - 40px);
+.imageS1Mobile p{
+    font-size: 18px;
+}
+.imageS1 p{
+    margin-top: 25px;
+    margin-bottom: 100px;
 }
 
+section.python {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+section.python h2 {
+    font-size: 24px;
+}
 
 /* FOOTER */
 footer {
     background-color: rgba(0, 3, 51, 0.9);
     color: whitesmoke;
-    font-size: 12px;
+    font-size: 16px;
     margin: 0px;
     margin-bottom: 0px;
     border-top: 8px solid rgb(0, 27, 95);
     padding: 30px;
 }
-#w3 {
+.w3 {
     position: relative;
     float: right;
-    bottom: 105px;
+    bottom: 100px;
+}
+.w3Mobile{
+    bottom: 0px;
 }
