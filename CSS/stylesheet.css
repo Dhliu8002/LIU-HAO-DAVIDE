@@ -10,6 +10,11 @@ body {
     margin: 0px;
     padding: 0px;
 }
+.disScroll{
+    height: 110%;
+    overflow: hidden;
+    padding-right: 21px;
+}
 
 
 /* HEADER */
@@ -129,6 +134,73 @@ NAV
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+.loginBackground {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0,0,0,0);
+    padding: 20%;
+    padding-top: 5%;
+}
+.login {
+    background-color: #fefefe;
+    color: #000;
+    padding: 10%;
+    padding-top: 50px;
+    border: 1px solid #888;
+    width: auto;
+}
+.loginTxt {
+    padding: 10px 5px;
+}
+input[type=username], input[type=password] {
+    width: 100%;
+    padding: 10px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.loginSubmit {
+    width: 100%;
+    background-color: lightgreen;
+    padding: 5px;
+}
+.loginSubmit:hover, .loginSubmit:focus{
+    transition: 0.3s;
+    background-color: green;
+}
+.loginRem{
+    font-size: 12px;
+}
+.psw{
+    font-size: 12px;
+}
+.close {
+    float: right;
+    position: relative;
+    bottom: 40px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+}
+.loginAnimate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }
 
 

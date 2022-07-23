@@ -39,9 +39,47 @@
                 <a class="active" href="javascript:void(0)">Home</a>
                 <a href="javascript:void(0)">News</a>
                 <a href="javascript:void(0)">Contact</a>
-                <button class="userButton"><i class="fa fa-user-circle user" id="user"></i></button>
+                <button class="userButton" onclick="document.body.classList.add('disScroll');document.getElementById('login').style.display = 'block';"><i class="fa fa-user-circle user" id="user"></i></button>
             </div>
         </nav>
+
+        <div class="loginBackground" id="login">
+            <form class="login loginAnimate" method="post">
+                 
+                <span onclick="login.style.display = 'none';document.body.classList.remove('disScroll');" class="close" title="Close Login" id="close">
+                    &times;
+                </span>
+                <div>
+                    <label for="user" class="loginTxt"><b>Username</b></label>
+                    <input type="username" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw" class="loginTxt"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit" class="loginSubmit">Login</button>
+                    <label class="loginRem">
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+                
+                <span class="psw"> <a href="javascript:void(0)">Forgot password?</a></span>
+            </form>
+        </div>
+
+        <script>
+            var login = document.getElementById('login');
+            var isret = false
+            var open = false
+            
+            window.onclick = function(event) {
+                if (event.target == close) {
+                    login.style.display = "none";
+                    document.body.classList.remove("disScroll");
+                } else if (open){
+                    document.body.classList.add("disScroll");
+                }
+            }
+        </script>
 
         <!-- CONTENT -->
         <div id="content">
