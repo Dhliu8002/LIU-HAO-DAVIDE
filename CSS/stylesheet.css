@@ -282,6 +282,18 @@ section.python {
 section.python h2 {
     font-size: 24px;
 }
+section.text {
+    margin: 100px;
+}
+section.text h2 {
+    font-size: 42px;
+}
+section.textMobile h2 {
+    font-size: 24px;
+}
+section.textMobile p {
+    font-size: 18px;
+}
 
 /* FOOTER */
 footer {
