@@ -1,0 +1,284 @@
+body,html {
+    background-color: #3052a0;
+    margin: 0px;
+}
+
+nav {
+    background-color: #607EAA;
+    padding: 0px;
+}
+
+.nav-profile-img {
+    width: 50px;
+    height: auto;
+}
+
+.nav-button:hover {
+    transition: 0.3s;
+    color: white !important;
+    background-color: #172f66;
+}
+
+.nav-profile-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: xx-large;
+    float: right;
+    color: inherit;
+    text-align: center;
+    display: none;
+}
+@media (min-width:500px){
+    .nav-profile-text {
+        display: block;
+    }
+}
+
+.nav-button {
+    float: right;
+    transition: 0.3s;
+    color: black;
+    background-color: #607EAA;
+    border-radius: 5px;
+}
+
+.trans {
+    transition: 0.3s;
+}
+
+.nav-text {
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    height: 50px;
+    margin: 5px;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.dropdown-menu-6 {
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+/* HOME */
+#home {
+    padding: 225px 0px 200px 0px;
+    background-color: #3052a0;
+    text-align: center;
+} 
+#home h2 {
+    text-align: inherit;
+    color: white;
+    padding: 5px 100px 5px 100px;
+}
+#home p {
+    text-align: inherit;
+    color: whitesmoke;
+    margin-left: calc(100% - 400px);
+}
+@media (max-width:500px){
+    #home h2{
+        font-size: large;
+        padding: 5px 30px 5px 30px;
+    }
+    #home p {
+        font-size: medium;
+        margin: 0px;
+    }
+}
+
+/* ABOUT */
+.about {
+    padding: 100px;
+    background-color: #1C3879;
+    padding-bottom: 200px;
+}
+.about h2 {
+    font-size: xx-large;
+    color: white;
+}
+#my-photo {
+    float: right;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 25px 10px 25px;
+    position: relative;
+    bottom: 20px;
+}
+.about p {
+    color: whitesmoke;
+    font-size: x-large;
+}
+@media (max-width:800px){
+    .about {
+        padding: 15px;
+    }
+    .about p {
+        font-size: large;
+    }
+}
+@media (max-width:600px){
+    .about h2{
+        text-align: center;
+    }
+    .about p {
+        font-size: medium;
+    }
+    #my-photo {
+        float: none;
+
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+        margin: 20px calc(50% - 150px) 20px calc(50% - 150px);
+    }
+}
+
+
+/* school */
+#school {
+    padding: 150px 100px 200px 125px;
+    background-color: #3052a0;
+    display: block;
+} 
+#school h2 {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+#school p {
+    color: whitesmoke;
+    font-size: x-large;
+}
+#school li {
+    color: whitesmoke;
+    font-size: large;
+}
+#school img {
+    width: calc(100%);
+    height: auto;
+    margin-top: 20px;
+}
+@media (max-width:800px){
+    #school {
+        padding: 15px;
+    }
+    #school p {
+        font-size: large;
+    }
+}
+@media (max-width:600px){
+    #school h2 {
+        font-size: x-large;
+        color: white;
+    }
+    #school p {
+        color: whitesmoke;
+        font-size: large;
+    }
+    #school li {
+        color: whitesmoke;
+        font-size: medium;
+    }
+}
+
+#graduation {
+    padding: 100px;
+    background-color: #1C3879;
+}
+#graduation img{
+    object-fit: cover;
+}
+#graduation h2{
+    font-size: xx-large;
+    color: whitesmoke;
+    margin: 30px;
+}
+@media (max-width:800px){
+    #graduation {
+        padding: 15px;
+    }
+}
+
+
+#os {
+    padding: 150px 100px 200px 125px;
+    background-color: #3052a0;
+    display: block;
+} 
+#os img{
+    object-fit: cover;
+}
+@media (max-width:800px){
+    #os {
+        padding: 15px;
+    }
+}
+#os h2 {
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+
+
+.photo {
+    padding: 150px 100px 200px 125px;
+    background-color: #607EAA;
+    display: block;
+} 
+@media (max-width:800px){
+    .photo {
+        padding: 15px;
+    }
+}
+.photo h2 {
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.photo p {
+    font-size: large;
+    color: #607EAA;
+    text-align: left;
+    margin-bottom: 30px;
+    display: list-item;
+    margin: 0px;
+    user-select:none;
+
+}
+.ihome {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.imarriage {
+    float: left;
+    overflow: hidden;
+    width: calc(40% - 20px);
+    object-fit: cover;
+}
+.ibike {
+    float: right;
+    overflow: hidden;
+    width: 60%;
+    height: auto;
+}
+
+#contact {
+    background-color: #3052a0;
+    height: fit-content;
+    color: white;
+    padding: 50px 20px 50px 20px;
+}
